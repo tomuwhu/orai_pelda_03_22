@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        var x = id => document.getElementById(id)
+        logic = {
+            f() {
+                fetch("http://localhost:3000/posts/").then(v => v.json()).then(v => {
+                    x("cont").innerHTML = v.map(row => `<div onclick="logic.g(${row.id}, '${row.author}', '${row.title}')">${row.author}: ${row.title}</div>`).join("")
+                })
+            },
+            g(id, author, title) {
+                x("cont").innerHTML=`
+                    <form>
+                        <input id="i1" value="${author}" /><br>
+                        <input id="i2" value="${title}" /><br>
+                        <div class="button" onclick="logic.h(${id})">Módosít</div>
+                    </form>
+                `
+            },
+            h(id) {
+                tosend = {id, author: x("i1").value, title: x("i2").value}
+                fetch(`http://localhost:3000/posts/${id}`, {method: "PUT", headers: { "Content-Type": "application/json"}, body: JSON.stringify(tosend)})
+            }
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="logic.f()">
+    <h1>Bejegyzések</h1>
+    <div id="cont"></div>
+</body>
+</html>

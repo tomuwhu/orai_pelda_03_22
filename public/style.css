@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+div#cont {
+    background-color: rgb(196, 191, 146);
+    box-shadow: 1px 1px 3px inset black;
+    padding: 10px;
+    border-radius: 12px;
+}
+div#cont div {
+    background-color: rgb(216, 212, 183);
+    box-shadow: 1px 1px 3px black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+div#cont div:hover {
+    background-color: aquamarine;
+}
+div.button {
+    background-color: beige;
+    border: solid 1px black;
+}
