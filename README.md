@@ -8,10 +8,14 @@ json-server db.json
 ```
 
 ```md
-HF: Befejezni, hiányzó funkciók 
-    - Új adat rögzítése
-    - adat törlése
-    - bejegyzés bővítése content-tel
+Elkészült funkciók
+    - szerző, cím megjelenítve
+    - szerző, cím módosítható
+HF: Befejezni, hiányzó funkciók:
+    - bejegyzések bővítése content-tel (tartalommal)
+    - új adat rögzítése
+    - kiválasztott adat törlése
+
 ```
 
 Osztályozni fogom!!!
