@@ -1,7 +1,5 @@
 # Március 22 órai példa
 
-[json-server](https://github.com/typicode/json-server/tree/v0)
-
 Indítás:
 ```bash
 json-server db.json
@@ -19,3 +17,10 @@ HF: Befejezni, hiányzó funkciók:
 ```
 
 Osztályozni fogom!!!
+
+Hivatkozások:
+
+[json-server](https://github.com/typicode/json-server/tree/v0)
+
+[órai tananyag - előkészület](https://github.com/tomuwhu/simlestfullstack)
+[keretrendszeres példa](https://github.com/tomuwhu/jsonserver-svelte)
