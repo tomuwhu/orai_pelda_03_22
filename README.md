@@ -7,9 +7,11 @@ Indítás:
 json-server db.json
 ```
 
+```md
 HF: Befejezni, hiányzó funkciók 
     - Új adat rögzítése
     - adat törlése
     - bejegyzés bővítése content-tel
+```
 
 Osztályozni fogom!!!
